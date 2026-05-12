@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 
 MODEL_PATH = "best.pt"
-PI_CAMERA_URL = "http://10.130.195.14:5001/video_feed"
+PI_CAMERA_URL = "http://172.20.10.5:5001/video_feed"
 
 latest_plate = "Ingen skylt hittad"
 latest_confidence = 0
