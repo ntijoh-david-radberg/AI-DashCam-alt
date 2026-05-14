@@ -45,7 +45,7 @@ def read_plate_text(plate_img):
     gray = cv2.cvtColor(plate_img, cv2.COLOR_BGR2GRAY)
     gray = cv2.resize(gray, None, fx=2, fy=2)
 
-    results = reader.readtext(gray)
+    results = reader.readtext(gray, allowlist="ABCDEFGHJKLMNPRSTUWXYZ0123456789", detail=0)
 
     for result in results:
         text = result[1]
